@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard</title>
+    <link rel=icon href=favicon.ico>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/dashboard.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                Tinder For Books</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Swipe
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="summary.html">Ratings</a>
+                    </li>
+                </ul>
+                <a href="submit.html" class="btn btn-outline-light">Submit</a>
+            </div>
+        </div>
+    </nav>
+    <!-- container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="tinder" class="d-flex justify-content-center">
+                    <div class="tinder-card">
+                        <div class="card" style="width: 20rem; height: 36rem;">
+                            <img class="card-img-top" src="/img/catcher.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title">The Catcher in the Rye</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Literary realism, Coming-of-Age Fiction</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tinder-card">
+                        <div class="card" style="width: 20rem; height: 36rem;">
+                            <img class="card-img-top" src="/img/pi.jpeg">
+                            <div class="card-body">
+                                <h5 class="card-title">Life of Pi</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Fiction</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tinder-card">
+                        <div class="card" style="width: 20rem; height: 36rem;">
+                            <img class="card-img-top" src="/img/gatsby.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title">The Great Gatsby</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Novel, Historical Fiction</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tinder-card">
+                        <div class="card" style="width: 20rem; height: 36rem;">
+                            <img class="card-img-top" src="/img/fahrenheit.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title">Fahrenheit 451</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Utopian and dystopian fiction</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tinder-buttons d-flex justify-content-center">
+                        <div class="col-auto">
+                            <button type="button" class="btn btn-outline-danger btn-circle btn-lg dislike">
+                                <i class="fas fa-times"></i>
+                            </button>
+
+                        </div>
+                        <div class="col-auto">
+                            <button type="button" class="btn btn-outline-success btn-circle btn-lg like">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- help info at the bottom -->
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="alert alert-secondary alert-dismissible fade show text-center" role="alert">
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <div class="item">
+                                Swipe left or click
+                                <i class="fas fa-times"></i> to Pass
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="item">
+                                Swip right or click
+                                <i class="fas fa-heart"></i> to Like
+                            </div>
+                        </div>
+                        <!-- <div class="col-12 col-sm-4">
+                            <div class="item">
+                                Click
+                                <i class="fas fa-info-circle"></i> for more info
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <button type="button" class="close btn-alert-close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/dashboard.js"></script>
+</body>
+
+</html>

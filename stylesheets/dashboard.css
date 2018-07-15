@@ -1,0 +1,151 @@
+body {
+    background: #F3F9FC;
+    padding-bottom: 50px;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
+}
+
+/* .card-one {
+    margin-top: 20%;
+}
+
+.card-two {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+} */
+
+.card-img-overlay {
+    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+/* .like {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.dislike {
+    margin-top: 20px;
+    margin-bottom: 15px;
+} */
+
+.btn-circle {
+    background: white;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    /* adjust line height to align vertically*/
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    overflow: hidden;
+    /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); */
+}
+
+.card-subtitle {
+    font-size: 14px;
+}
+
+.book-title {
+    color: white;
+    /* font-size: 24px; */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+}
+
+.genre {
+    color: rgb(226, 226, 226);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+}
+
+.btn-tiny {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    /* adjust line height to align vertically*/
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    overflow: hidden;
+    /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); */
+}
+
+.hiding {
+    display: none;
+}
+
+.no-border {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.navbar {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    min-height: 80px;
+    background: #ff9966;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    -moz-bbox-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    /* opacity: 0.9; */
+}
+
+.navbar-brand {
+    font-size: 28px;
+}
+
+.alert-secondary {
+    margin-top: 50px;
+    border: none;
+}
+
+.btn-alert-close:focus {
+    outline: none;
+}
+
+.btn-outline-light {
+    font-size: 18px;
+}
+
+.tinder-card {
+    overflow: hidden;
+    position: absolute;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: grab;
+    height: 800px;
+}
+
+.card-img-top {
+    height: 480px;
+}
+
+#tinder {
+    margin-top: 45px;
+}
+
+.tinder-buttons {
+    padding-top: 600px;
+}
+
+.card {
+    border: none;
+}
+
+#card1 {
+    margin-left: 60px;
+    transform: rotate(15deg);
+}

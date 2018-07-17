@@ -25,6 +25,7 @@ $.fn.extend({
     },
 });
 
+// animateCss function will do something after the animation
 $('#tinder').animateCss('fadeIn');
 $('.like').animateCss('bounceInUp');
 $('.dislike').animateCss('bounceInUp');

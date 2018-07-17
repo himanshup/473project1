@@ -6,8 +6,6 @@ body {
 html {
     overflow: scroll;
     overflow-x: hidden;
-    /* for hiding on firefox */
-    overflow: -moz-scrollbars-none;
 }
 
 ::-webkit-scrollbar {
@@ -21,7 +19,6 @@ html {
     margin-top: 35px;
     border: none;
 }
-
 
 .navbar {
     font-family: 'Lato', sans-serif;

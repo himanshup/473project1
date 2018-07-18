@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "imagePath": "img/catcher.jpg",
+        "title": "The Catcher in the Rye",
+        "summary": "Textbook for class",
+        "genre": "Literary realism, Coming-of-Age Fiction"
+    },
+    {
+        "id": 1,
+        "imagePath": "img/fahrenheit.jpg",
+        "title": "Fahrenheit 451",
+        "summary": "Textbook for class",
+        "genre": "Utopian and Dystopian fiction"
+    },
+    {
+        "id": 2,
+        "imagePath": "img/pi.jpeg",
+        "title": "Life of Pi",
+        "summary": "Textbook for class",
+        "genre": "Fiction"
+    }
+]

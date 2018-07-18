@@ -52,57 +52,20 @@
             <div class="col-12">
                 <div id="tinder" class="d-flex justify-content-center">
                     <div class="tinder-card tinder-shadow">
-                        <div class="card shadow" style="width: 20rem; height: 36rem;"></div>
+                        <div class="card shadow" style="width: 20rem; height: 36rem; background: transparent;"></div>
                     </div>
-                    <div class="tinder-card">
-                        <div class="card" style="width: 20rem; height: 36rem;">
-                            <img class="card-img-top" src="/img/catcher.jpg">
-                            <div class="card-body">
-                                <h5 class="card-title">The Catcher in the Rye</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Literary realism, Coming-of-Age Fiction</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tinder-card">
-                        <div class="card" style="width: 20rem; height: 36rem;">
-                            <img class="card-img-top" src="/img/pi.jpeg">
-                            <div class="card-body">
-                                <h5 class="card-title">Life of Pi</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Fiction</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tinder-card">
-                        <div class="card" style="width: 20rem; height: 36rem;">
-                            <img class="card-img-top" src="/img/gatsby.jpg">
-                            <div class="card-body">
-                                <h5 class="card-title">The Great Gatsby</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Novel, Historical Fiction</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tinder-card">
-                        <div class="card" style="width: 20rem; height: 36rem;">
-                            <img class="card-img-top" src="/img/fahrenheit.jpg">
-                            <div class="card-body">
-                                <h5 class="card-title">Fahrenheit 451</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Utopian and dystopian fiction</h6>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+                <div class="tinder-buttons d-flex justify-content-center">
+                    <div class="col-auto">
+                        <button type="button" id="dislikeBtn" class="btn btn-outline-danger btn-circle btn-lg shadow-sm">
+                            <i class="fas fa-times"></i>
+                        </button>
 
-                    <div class="tinder-buttons d-flex justify-content-center">
-                        <div class="col-auto">
-                            <button type="button" class="btn btn-outline-danger btn-circle btn-lg dislike shadow-sm">
-                                <i class="fas fa-times"></i>
-                            </button>
-
-                        </div>
-                        <div class="col-auto">
-                            <button type="button" class="btn btn-outline-success btn-circle btn-lg like shadow-sm">
-                                <i class="fas fa-heart"></i>
-                            </button>
-                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" id="likeBtn" class="btn btn-outline-success btn-circle btn-lg shadow-sm">
+                            <i class="fas fa-heart"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -125,12 +88,6 @@
                                 <i class="fas fa-heart"></i> to Like
                             </div>
                         </div>
-                        <!-- <div class="col-12 col-sm-4">
-                            <div class="item">
-                                Click
-                                <i class="fas fa-info-circle"></i> for more info
-                            </div>
-                        </div> -->
                     </div>
 
                     <button type="button" class="close btn-alert-close" data-dismiss="alert" aria-label="Close">
@@ -148,6 +105,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="scripts/dashboard.js"></script>
+    <script type="text/javascript" src="scripts/database.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 
 </html>

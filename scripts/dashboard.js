@@ -31,23 +31,23 @@ $('#likeBtn').animateCss('bounceInUp');
 $('#dislikeBtn').animateCss('bounceInUp');
 $('.alert-secondary').animateCss('fadeInUpBig');
 
-$('#likeBtn').click(function () {
-    if (document.getElementsByClassName("tinder-card").length === 2) {
-        $("#card1").animateCss("rotateOutUpRight", function () {
-            $("#card1").remove();
-            $("#card1").animateCss("rotateOutUpRight");
-        });
-        $(".tinder-shadow").remove();
-    } else {
-        $("#card1").animateCss("rotateOutUpRight", function () {
-            $("#card1").remove();
-            $("#card1").animateCss("rotateOutUpRight");
-        });
-    }
-});
+// $('#likeBtn').click(function () {
+//     if (document.getElementsByClassName("tinder-card").length === 2) {
+//         $("#card1").animateCss("rotateOutUpRight", function () {
+//             $("#card1").remove();
+//             $("#card1").animateCss("rotateOutUpRight");
+//         });
+//         $(".tinder-shadow").remove();
+//     } else {
+//         $("#card1").animateCss("rotateOutUpRight", function () {
+//             $("#card1").remove();
+//             $("#card1").animateCss("rotateOutUpRight");
+//         });
+//     }
+// });
 
-$('#dislikeBtn').click(function () {
-    $("#card1").animateCss("rotateOutUpLeft", function () {
-        $("#card1").remove();
-    });
-});
+// $('#dislikeBtn').click(function () {
+//     $("#card1").animateCss("rotateOutUpLeft", function () {
+//         $("#card1").remove();
+//     });
+// });

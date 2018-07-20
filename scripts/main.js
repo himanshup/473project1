@@ -86,10 +86,20 @@ var counter = 0;
 		}
 	}
 
-	function updateTinder() {
+	function like() {
 		document.getElementById('book' + counter).remove();
 		counter++;
 		remoteDB.updateLiked($('#book').val());
+		$('#book').val(function (i, oldval) {
+			return ++oldval;
+		});
+		checkNumOfBooks();
+	}
+
+	function dislike() {
+		document.getElementById('book' + counter).remove();
+		counter++;
+		remoteDB.updateDislike($('#book').val());
 		$('#book').val(function (i, oldval) {
 			return ++oldval;
 		});
@@ -100,7 +110,7 @@ var counter = 0;
 		document.getElementById('likeBtn').addEventListener('click', function () {
 			if (document.getElementsByClassName('tinder-card').length === 2) {
 				$('#' + 'book' + counter).animateCss('rotateOutUpRight', function () {
-					updateTinder();
+					like();
 				});
 				$('#tinder-shadow').animateCss('rotateOutUpRight', function () {
 					document.getElementById('tinder-shadow').remove();
@@ -108,7 +118,7 @@ var counter = 0;
 				});
 			} else {
 				$('#' + 'book' + counter).animateCss('rotateOutUpRight', function () {
-					updateTinder();
+					like();
 				});
 			}
 		});
@@ -116,7 +126,8 @@ var counter = 0;
 		document.getElementById('dislikeBtn').addEventListener('click', function () {
 			if (document.getElementsByClassName('tinder-card').length === 2) {
 				$('#' + 'book' + counter).animateCss('rotateOutUpLeft', function () {
-					updateTinder();
+					dislike()
+					checkNumOfBooks();
 				});
 				$('#tinder-shadow').animateCss('rotateOutUpLeft', function () {
 					document.getElementById('tinder-shadow').remove();
@@ -124,7 +135,8 @@ var counter = 0;
 				});
 			} else {
 				$('#' + 'book' + counter).animateCss('rotateOutUpLeft', function () {
-					updateTinder();
+					dislike()
+					checkNumOfBooks();
 				});
 			}
 		});

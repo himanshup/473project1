@@ -18,10 +18,9 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="/">
-                Tinder For Books</a>
+            <a class="navbar-brand" href="/">Books</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -47,21 +46,37 @@
         </div>
     </nav>
     <!-- container -->
-    <div class="container">
+    <div class="container" id="tinder-container">
         <div class="row">
             <div class="col-12">
                 <div id="tinder" class="d-flex justify-content-center">
-                    <div class="tinder-card tinder-shadow">
-                        <div class="card shadow" style="width: 20rem; height: 36rem; background: transparent;"></div>
+                    <div id="no-cards">
+                        <div class="row">
+                            <div class="col d-flex justify-content-center">
+                                <p class="lead text-center">No cards left, press the button to refresh.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col d-flex justify-content-center">
+                                <button type="button" class="btn btn-primary" id="reset-button">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tinder-card" id="tinder-shadow">
+                        <div class="card shadow" style="width: 20rem; height: 37rem;"></div>
                     </div>
                 </div>
+
+                <input id="book" type="text" name="counter" class="d-none" value="0">
+
                 <div class="tinder-buttons d-flex justify-content-center">
                     <div class="col-auto">
                         <button type="button" id="dislikeBtn" class="btn btn-outline-danger btn-circle btn-lg shadow-sm">
                             <i class="fas fa-times"></i>
                         </button>
-
                     </div>
+
                     <div class="col-auto">
                         <button type="button" id="likeBtn" class="btn btn-outline-success btn-circle btn-lg shadow-sm">
                             <i class="fas fa-heart"></i>
@@ -70,7 +85,6 @@
                 </div>
             </div>
         </div>
-
         <!-- help info at the bottom -->
         <div class="row justify-content-center">
             <div class="col-12">
@@ -104,7 +118,6 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="scripts/dashboard.js"></script>
     <script type="text/javascript" src="scripts/database.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
 </body>

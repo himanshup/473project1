@@ -78,6 +78,14 @@ html {
     text-shadow: 0 2px 4px rgba(0, 0, 0, .5);
 }
 
+.card-title {
+    font-size: 16px;
+}
+
+.card-subtitle {
+    font-size: 14px;
+}
+
 .container-fluid {
     padding-top: 25px;
     padding-bottom: 50px;
@@ -116,9 +124,13 @@ hr {
     border: none;
 }
 
-/* .card-img-top {
+.example-card {
+    height: 400px;
+}
+
+.display-card{
     height: 500px;
-} */
+}
 
 #card1 {
     margin-left: 60px;

@@ -89,7 +89,7 @@ var counter = 0;
 	function updateTinder() {
 		document.getElementById('book' + counter).remove();
 		counter++;
-		// remoteDB.updateLiked($('#book').val());
+		remoteDB.updateLiked($('#book').val());
 		$('#book').val(function (i, oldval) {
 			return ++oldval;
 		});

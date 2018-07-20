@@ -109,7 +109,7 @@ var counter = 0;
 	function checkClick() {
 		document.getElementById('likeBtn').addEventListener('click', function () {
 			if (document.getElementsByClassName('tinder-card').length === 2) {
-				$('#' + 'book' + counter).animateCss('rotateOutUpRight', function () {
+				$('#book' + counter).animateCss('rotateOutUpRight', function () {
 					like();
 				});
 				$('#tinder-shadow').animateCss('rotateOutUpRight', function () {
@@ -117,7 +117,7 @@ var counter = 0;
 					checkNumOfBooks();
 				});
 			} else {
-				$('#' + 'book' + counter).animateCss('rotateOutUpRight', function () {
+				$('#book' + counter).animateCss('rotateOutUpRight', function () {
 					like();
 				});
 			}
@@ -125,7 +125,7 @@ var counter = 0;
 
 		document.getElementById('dislikeBtn').addEventListener('click', function () {
 			if (document.getElementsByClassName('tinder-card').length === 2) {
-				$('#' + 'book' + counter).animateCss('rotateOutUpLeft', function () {
+				$('#book' + counter).animateCss('rotateOutUpLeft', function () {
 					dislike()
 					checkNumOfBooks();
 				});
@@ -134,7 +134,7 @@ var counter = 0;
 					checkNumOfBooks();
 				});
 			} else {
-				$('#' + 'book' + counter).animateCss('rotateOutUpLeft', function () {
+				$('#book' + counter).animateCss('rotateOutUpLeft', function () {
 					dislike()
 					checkNumOfBooks();
 				});

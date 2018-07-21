@@ -1,3 +1,4 @@
+// animateCss function does the animation one time and then something after
 $.fn.extend({
 	animateCss: function (animationName, callback) {
 		var animationEnd = (function (el) {
@@ -24,15 +25,6 @@ $.fn.extend({
 		return this;
 	},
 });
-
-function animations() {
-	// animateCss function does the animation one time and then something after
-	// this is all the animations you see in the beginning
-	$('#tinder').animateCss('fadeIn');
-	$('#likeBtn').animateCss('bounceInUp');
-	$('#dislikeBtn').animateCss('bounceInUp');
-	$('.alert-secondary').animateCss('fadeInUpBig');
-}
 
 var counter = 0;
 

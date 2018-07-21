@@ -113,3 +113,13 @@ html {
 .tinder-buttons {
     padding-top: 440px;
 }
+
+#reset-button {
+    background: #fd5068;
+    color: white;
+}
+
+#reset-button:hover {
+    background: #e2465b;
+    color: white;
+}

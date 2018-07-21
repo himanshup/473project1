@@ -64,7 +64,7 @@ var counter = 0;
 
 	function checkNumOfBooks() {
 		if (document.getElementsByClassName('tinder-card').length === 0) {
-			document.getElementById('no-cards').style.visibility = "visible";
+			$('#no-cards').css('visibility','visible').hide().fadeIn('slow');
 			$('.tinder-buttons').animateCss('fadeOut', function () {
 				document.querySelector('.tinder-buttons').style.visibility = "hidden";
 			});

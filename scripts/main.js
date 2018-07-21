@@ -36,7 +36,6 @@ var counter = 0;
 	var remoteDB = new DataBase(SERVER_URL);
 
 	generateBooks();
-	animations();
 	checkClick();
 
 	function generateBooks() {

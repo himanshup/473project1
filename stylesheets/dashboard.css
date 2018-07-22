@@ -21,7 +21,7 @@ html {
 }
 
 #tinder-container {
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 /* .card-one {
@@ -52,7 +52,6 @@ html {
 .navbar {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
-    min-height: 80px;
     background: #ff9966;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
@@ -69,7 +68,7 @@ html {
 }
 
 .alert-secondary {
-    margin-top: 50px;
+    margin-top: 15px;
     border: none;
 }
 
@@ -111,7 +110,7 @@ html {
 }
 
 .tinder-buttons {
-    padding-top: 440px;
+    padding-top: 420px;
 }
 
 #reset-button {

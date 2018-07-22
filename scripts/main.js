@@ -39,7 +39,7 @@ var counter = 0;
 	checkClick();
 
 	function generateBooks() {
-		$.getJSON('example.json').done(function (result) {
+		$.getJSON('books.json').done(function (result) {
 			var numberOfBooks = result.length;
 			remoteDB.initialize(numberOfBooks).then(function () {
 				remoteDB.getAll().then(function (databaseBooks) {

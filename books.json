@@ -1,178 +1,169 @@
-[
-	{
-		"id": 0,
-		"imagePath": "img/frontend.jpg",
-		"title": "Front-End Web Development Book 1",
-		"author": "Chris Aquino and Todd Gandee",
-		"summary": "Textbook for class",
-		"genre": "Textbook"
-	},
-	{
-		"id": 1,
-		"imagePath": "img/frontend.jpg",
-		"title": "Front-End Web Development Book 2",
-		"author": "Chris Aquino and Todd Gandee",
-		"summary": "Textbook for class",
-		"genre": "Textbook"
-	},
-	{
-		"id": 2,
-		"imagePath": "img/harrypotter.jpg",
-		"title": "Harry Potter and the Sorcerer's Stone",
-		"author": "J.K. Rowling",
-		"summary": "The first of J.K. Rowling's popular children's novels about Harry Potter, a boy who learns on his eleventh birthday that he is the orphaned son of two powerful wizards and possesses unique magical powers of his own. He is summoned from his life as an unwanted child to become a student at Hogwarts, an English boarding school for wizards. There, he meets several friends who become his closest allies and help him discover the truth about his parents' mysterious deaths.",
-		"genre": "Fantasy"
-	},
-	{
-		"id": 3,
-		"imagePath": "img/crackingcode.tiff",
-		"title": "Cracking the Coding Interview",
-		"author": "Gayle Laakmaan McDowell",
-		"summary": "Cracking the Coding Interview, 6th Edition is here to help you through this process, teaching you what you need to know and enabling you to perform at your very best. I've coached and interviewed hundreds of software engineers. The result is this book. Learn how to uncover the hints and hidden details in a question, discover how to break down a problem into manageable chunks, develop techniques to unstick yourself when stuck, learn (or re-learn) core computer science concepts, and practice on 189 interview questions and solutions",
-		"genre": "Textbook"
-	},
-	{
-		"id": 4,
-		"imagePath": "img/12rules.tiff",
-		"title": "12 Rules for Life an Antidote to Chaos",
-		"author": "Jordan B. Peterson",
-		"summary": "The 12 Most Valuable Things Everyone Should Know is self-help with smarts, an introduction to philosophy, mythology and the science of the mind, and a practical, engaging guide to a better life.",
-		"genre": "Non-Fiction"
-	},
-	{
-		"id": 5,
-		"imagePath": "img/tkam.tiff",
-		"title": "To Kill a Mockingbird",
-		"author": "Harper Lee",
-		"summary": "It focuses on six-year-old Jean Louise Finch (nicknamed Scout), who lives with her older brother, Jeremy (nicknamed Jem), and their widowed father, Atticus, a middle-aged lawyer. Jem and Scout befriend a boy named Dill, who visits Maycomb to stay with his aunt each summer.",
-		"genre": "Southern Gothic"
-	},
-	{
-		"id": 6,
-		"imagePath": "img/animalfarm.tiff",
-		"title": "Animal Farm",
-		"author": "George Orwell",
-		"summary": "The animals of the Manor Farm lived badly. Their farmer Mr. Jones, a mean and drunken man, exploited them. ... They also changed the name of the farm to Animal Farm from Manor Farm. Snowball, an inventive and vivacious pig, and Napoleon, a big and cruel-looking pig, started to fight for leadership.",
-		"genre": "Satire"
-	},
-	{
-		"id": 7,
-		"imagePath": "img/catcherrye.tiff",
-		"title": "The Catcher in the Rye",
-		"author": "J.D. Salinger",
-		"summary": "The Catcher in the Rye is set around the 1950s and is narrated by a young man named Holden Caulfield. Holden is not specific about his location while he's telling the story, but he makes it clear that he is undergoing treatment in a mental hospital or sanatorium.",
-		"genre": "Literary Realism"
-	},
-	{
-		"id": 8,
-		"imagePath": "image/micemen.tiff",
-		"title": "Of Mice and Men",
-		"author": "John Steinbeck",
-		"summary": "Two migrant workers, George and Lennie, have been let off a bus miles away from the California farm where they are due to start work. George is a small, dark man with sharp, strong features. Lennie, his companion, is his opposite, a giant of a man with a shapeless face.",
-		"genre": "Novella, Fiction"
-	},
-	{
-		"id": 9,
-		"imagePath": "img/greatgatsby.tiff",
-		"title": "The Great Gatsby",
-		"author": "F. Scott Fitzgerald",
-		"summary": "The Great Gatsby is a story told by Nick Carraway, who was once Gatsby's neighbor, and he tells the story sometime after 1922, when the incidents that fill the book take place. As the story opens, Nick has just moved from the Midwest to West Egg, Long Island, seeking his fortune as a bond salesman.",
-		"genre": "Historical Fiction"
-	},
-	{
-		"id": 10,
-		"imagePath": "img/hungergames.tiff",
-		"title": "The Hunger Games",
-		"author": "Suzanne Collins",
-		"summary": "In what was once North America, the Capitol of Panem maintains its hold on its 12 districts by forcing them each to select a boy and a girl, called Tributes, to compete in a nationally televised event called the Hunger Games. Every citizen must watch as the youths fight to the death until only one remains. District 12 Tribute Katniss Everdeen (Jennifer Lawrence) has little to rely on, other than her hunting skills and sharp instincts, in an arena where she must weigh survival against love.",
-		"genre": "Adventure Fiction"
-	},
-	{
-		"id": 11,
-		"imagePath": "img/lordrings.tiff",
-		"title": "The Lord of the Rings",
-		"author": "J.R.R. Tolkien",
-		"summary": "Thousands of years before the events of the novel, the Dark Lord Sauron had forged the One Ring to rule the other Rings of Power and corrupt those who wore them: the leaders of Men, Elves and Dwarves. ... Gollum lost the Ring, his precious, and as told in The Hobbit, Bilbo Baggins found it.",
-		"genre": "Fantasy Fiction"
-	},
-	{
-		"id": 12,
-		"imagePath": "img/greatexpectations.tiff",
-		"title": "Great Expectations",
-		"author": "Charles Dickens",
-		"summary": "Pip is an orphan living on the Kent marshes with his abusive sister and her husband, Joe Gargery, the village blacksmith. While exploring in the churchyard near the tombstones of his parents, Pip is accosted by an escaped convict.",
-		"genre": "Novel"
-	},
-	{
-		"id": 13,
-		"imagePath": "img/huckleberry.tiff",
-		"title": "The Adventures of Huckleberry Finn",
-		"author": "Mark Twain",
-		"summary": "In Missouri, during the 1840s, young Huck Finn fearful of his drunkard father and yearning for adventure, leaves his foster family and joins with runaway slave Jim in a voyage down the Mississippi River toward slavery free states.",
-		"genre": "Picaresque Fiction"
-	},
-	{
-		"id": 14,
-		"imagePath": "img/brownbear.jpg",
-		"title": "Brown Bear, Brown Bear, What Do You See?",
-		"author": "Bill Martin Jr./Eric Carle",
-		"summary": "A big happy frog, a plump purple cat, a handsome blue horse, and a soft yellow duck--all parade across the pages of this delightful book. Children will immediately respond to Eric Carle's flat, boldly colored collages. Combined with Bill Martin's singsong text, they create unforgettable images of these endearing animals.",
-		"genre": "Children's Literature"
-	},
-	{
-		"id": 15,
-		"imagePath": "img/odyssey.tiff",
-		"title": "The Odyssey",
-		"author": "Homer",
-		"summary": "The Odyssey is Homer's epic of Odysseus' 10-year struggle to return home after the Trojan War. While Odysseus battles mystical creatures and faces the wrath of the gods, his wife Penelope and his son Telemachus stave off suitors vying for Penelope's hand and Ithaca's throne long enough for Odysseus to return.",
-		"genre": "Epic Poetry"
-	},
-	{
-		"id": 16,
-		"imagePath": "img/hamlet.tiff",
-		"title": "Hamlet",
-		"author": "William Shakespeare",
-		"summary": "Prince Hamlet is depressed. Having been summoned home to Denmark from school in Germany to attend his father's funeral, he is shocked to find his mother Gertrude already remarried. The Queen has wed Hamlet's Uncle Claudius, the dead king's brother. To Hamlet, the marriage is foul incest.",
-		"genre": "Tragedy"
-	},
-	{
-		"id": 17,
-		"imagePath": "img/prideprejudice.tiff",
-		"title": "Pride & Prejudice",
-		"author": "Jane Austen",
-		"summary": "Pride and Prejudice is a humorous story of love and life among English gentility during the Georgian era. Mr Bennet is an English gentleman living in Hartfordshire with his overbearing wife. The Bennets 5 daughters; the beautiful Jane, the clever Elizabeth, the bookish Mary, the immature Kitty and the wild Lydia.",
-		"genre": "Romance Novel"
-	},
-	{
-		"id": 18,
-		"imagePath": "img/grapeswrath.tiff",
-		"title": "The Grapes of Wrath",
-		"author": "John Steinbeck",
-		"summary": "Tom Joad and his family are forced from their farm in the Depression-era Oklahoma Dust Bowl and set out for California along with thousands of others in search of jobs, land, and hope for a brighter future.",
-		"genre": "Novel"
-	},
-	{
-		"id": 19,
-		"imagePath": "img/colorpurple.tiff",
-		"title": "The Color Purple",
-		"author": "Alice Walker",
-		"summary": "Alice Walker's The Color Purple weaves an intricate mosaic of women joined by their love for each other, the men who abuse them, and the children they care for. In the first few letters, Celie tells God that she has been raped by her father and that she is pregnant for the second time with his child.",
-		"genre": "Fiction"
-	},
-	{
-		"id": 20,
-		"imagePath": "img/intowild.tiff",
-		"title": "Into the Wild",
-		"author": "Jon Krakauer",
-		"summary": "Christopher McCandless, son of wealthy parents, graduates from Emory University as a top student and athlete. However, instead of embarking on a prestigious and profitable career, he chooses to give his savings to charity, rid himself of his possessions, and set out on a journey to the Alaskan wilderness.",
-		"genre": "Biography"
-	},
-	{
-		"id": 21,
-		"imagePath": "img/leavesgrass.tiff",
-		"title": "Leaves of Grass",
-		"author": "Walt Whitman",
-		"summary": "Leaves of Grass Summary. Leaves of Grass is a collection of poetry written over Walt Whitman's entire lifetime organized thematically into sections. Whitman revised and added to the book throughout his life, the final edition being published only months before his death in 1891",
-		"genre": "Poetry"
-	}
-]
+[{
+			"id": 0,
+			"imagePath": "img/Front-End.jpg",
+			"title": "Front-End Web Development Book 1",
+			"author": " ",
+			"summary": "Textbook for class",
+			"genre": "Textbook"
+		},
+		{
+			"id":1,
+			"imagePath": "img/harrypotter.jpg",
+			"title": "Harry Potter and the Sorcerer's Stone",
+			"author": "J.K. Rowling",
+			"summary": "The first of J.K. Rowling's popular children's novels about Harry Potter, a boy who learns on his eleventh birthday that he is the orphaned son of two powerful wizards and possesses unique magical powers of his own. He is summoned from his life as an unwanted child to become a student at Hogwarts, an English boarding school for wizards. There, he meets several friends who become his closest allies and help him discover the truth about his parents' mysterious deaths.",
+			"genre": "Fantasy"
+		},
+		{
+			"id":2,
+			"imagePath": "img/crackingcode.jpg",
+			"title": "Cracking the Coding Interview",
+			"author": "Gayle Laakmaan McDowell",
+			"summary": "Cracking the Coding Interview, 6th Edition is here to help you through this process, teaching you what you need to know and enabling you to perform at your very best. I've coached and interviewed hundreds of software engineers. The result is this book. Learn how to uncover the hints and hidden details in a question, discover how to break down a problem into manageable chunks, develop techniques to unstick yourself when stuck, learn (or re-learn) core computer science concepts, and practice on 189 interview questions and solutions",
+			"genre": "Textbook"
+		},
+		{
+			"id":3,
+			"imagePath": "img/12rules.jpg",
+			"title": "12 Rules for Life an Antidote to Chaos",
+			"author": "Jordan B. Peterson",
+			"summary": "The 12 Most Valuable Things Everyone Should Know is self-help with smarts, an introduction to philosophy, mythology and the science of the mind, and a practical, engaging guide to a better life.",
+			"genre": "Non-Fiction"
+		},
+		{
+			"id":4,
+			"imagePath": "img/tkam.jpg",
+			"title": "To Kill a Mockingbird",
+			"author": "Harper Lee",
+			"summary": "It focuses on six-year-old Jean Louise Finch (nicknamed Scout), who lives with her older brother, Jeremy (nicknamed Jem), and their widowed father, Atticus, a middle-aged lawyer. Jem and Scout befriend a boy named Dill, who visits Maycomb to stay with his aunt each summer.",
+			"genre": "Southern Gothic"
+		},
+		{
+			"id":5,
+			"imagePath": "img/animalfarm.jpg",
+			"title": "Animal Farm",
+			"author": "George Orwell",
+			"summary": "The animals of the Manor Farm lived badly. Their farmer Mr. Jones, a mean and drunken man, exploited them. ... They also changed the name of the farm to Animal Farm from Manor Farm. Snowball, an inventive and vivacious pig, and Napoleon, a big and cruel-looking pig, started to fight for leadership.",
+			"genre": "Satire"
+		},
+		{
+			"id":6,
+			"imagePath": "img/catcherrye.jpg",
+			"title": "The Catcher in the Rye",
+			"author": "J.D. Salinger",
+			"summary": "The Catcher in the Rye is set around the 1950s and is narrated by a young man named Holden Caulfield. Holden is not specific about his location while he's telling the story, but he makes it clear that he is undergoing treatment in a mental hospital or sanatorium.",
+			"genre": "Literary Realism"
+		},
+		{
+			"id":7,
+			"imagePath": "img/micemen.jpg",
+			"title": "Of Mice and Men",
+			"author": "John Steinbeck",
+			"summary": "Two migrant workers, George and Lennie, have been let off a bus miles away from the California farm where they are due to start work. George is a small, dark man with sharp, strong features. Lennie, his companion, is his opposite, a giant of a man with a shapeless face.",
+			"genre": "Novella, Fiction"
+		},
+		{
+			"id":8,
+			"imagePath": "img/greatgatsby.jpg",
+			"title": "The Great Gatsby",
+			"author": "F. Scott Fitzgerald",
+			"summary": "The Great Gatsby is a story told by Nick Carraway, who was once Gatsby's neighbor, and he tells the story sometime after 1922, when the incidents that fill the book take place. As the story opens, Nick has just moved from the Midwest to West Egg, Long Island, seeking his fortune as a bond salesman.",
+			"genre": "Historical Fiction"
+		},
+		{
+			"id":9,
+			"imagePath": "img/hungergames.jpg",
+			"title": "The Hunger Games",
+			"author": "Suzanne Collins",
+			"summary": "In what was once North America, the Capitol of Panem maintains its hold on its 12 districts by forcing them each to select a boy and a girl, called Tributes, to compete in a nationally televised event called the Hunger Games. Every citizen must watch as the youths fight to the death until only one remains. District 12 Tribute Katniss Everdeen (Jennifer Lawrence) has little to rely on, other than her hunting skills and sharp instincts, in an arena where she must weigh survival against love.",
+			"genre": "Adventure Fiction"
+		},
+		{
+			"id":10,
+			"imagePath": "img/lordrings.jpg",
+			"title": "The Lord of the Rings",
+			"author": "J.R.R. Tolkien",
+			"summary": "Thousands of years before the events of the novel, the Dark Lord Sauron had forged the One Ring to rule the other Rings of Power and corrupt those who wore them: the leaders of Men, Elves and Dwarves. ... Gollum lost the Ring, his precious, and as told in The Hobbit, Bilbo Baggins found it.",
+			"genre": "Fantasy Fiction"
+		},
+		{
+			"id":11,
+			"imagePath": "img/greatexpectations.jpg",
+			"title": "Great Expectations",
+			"author": "Charles Dickens",
+			"summary": "Pip is an orphan living on the Kent marshes with his abusive sister and her husband, Joe Gargery, the village blacksmith. While exploring in the churchyard near the tombstones of his parents, Pip is accosted by an escaped convict.",
+			"genre": "Novel"
+		},
+		{
+			"id":12,
+			"imagePath": "img/huckleberry.jpg",
+			"title": "The Adventures of Huckleberry Finn",
+			"author": "Mark Twain",
+			"summary": "In Missouri, during the 1840s, young Huck Finn fearful of his drunkard father and yearning for adventure, leaves his foster family and joins with runaway slave Jim in a voyage down the Mississippi River toward slavery free states.",
+			"genre": "Picaresque Fiction"
+		},
+		{
+			"id":13,
+			"imagePath": "img/brownbear.jpg",
+			"title": "Brown Bear, Brown Bear, What Do You See?",
+			"author": "Bill Martin Jr./Eric Carle",
+			"summary": "A big happy frog, a plump purple cat, a handsome blue horse, and a soft yellow duck--all parade across the pages of this delightful book. Children will immediately respond to Eric Carle's flat, boldly colored collages. Combined with Bill Martin's singsong text, they create unforgettable images of these endearing animals.",
+			"genre": "Children's Literature"
+		},
+		{
+			"id":14,
+			"imagePath": "img/odyssey.jpg",
+			"title": "The Odyssey",
+			"author": "Homer",
+			"summary": "The Odyssey is Homer's epic of Odysseus' 10-year struggle to return home after the Trojan War. While Odysseus battles mystical creatures and faces the wrath of the gods, his wife Penelope and his son Telemachus stave off suitors vying for Penelope's hand and Ithaca's throne long enough for Odysseus to return.",
+			"genre": "Epic Poetry"
+		},
+		{
+			"id":15,
+			"imagePath": "img/hamlet.jpg",
+			"title": "Hamlet",
+			"author": "William Shakespeare",
+			"summary": "Prince Hamlet is depressed. Having been summoned home to Denmark from school in Germany to attend his father's funeral, he is shocked to find his mother Gertrude already remarried. The Queen has wed Hamlet's Uncle Claudius, the dead king's brother. To Hamlet, the marriage is foul incest.",
+			"genre": "Tragedy"
+		},
+		{
+			"id":16,
+			"imagePath": "img/prideprejudice.jpg",
+			"title": "Pride & Prejudice",
+			"author": "Jane Austen",
+			"summary": "Pride and Prejudice is a humorous story of love and life among English gentility during the Georgian era. Mr Bennet is an English gentleman living in Hartfordshire with his overbearing wife. The Bennets 5 daughters; the beautiful Jane, the clever Elizabeth, the bookish Mary, the immature Kitty and the wild Lydia.",
+			"genre": "Romance Novel"
+		},
+		{
+			"id":17,
+			"imagePath": "img/grapeswrath.jpg",
+			"title": "The Grapes of Wrath",
+			"author": "John Steinbeck",
+			"summary": "Tom Joad and his family are forced from their farm in the Depression-era Oklahoma Dust Bowl and set out for California along with thousands of others in search of jobs, land, and hope for a brighter future.",
+			"genre": "Novel"
+		},
+		{
+			"id":18,
+			"imagePath": "img/colorpurple.jpg",
+			"title": "The Color Purple",
+			"author": "Alice Walker",
+			"summary": "Alice Walker's The Color Purple weaves an intricate mosaic of women joined by their love for each other, the men who abuse them, and the children they care for. In the first few letters, Celie tells God that she has been raped by her father and that she is pregnant for the second time with his child.",
+			"genre": "Fiction"
+		},
+		{
+			"id":19,
+			"imagePath": "img/intowild.jpg",
+			"title": "Into the Wild",
+			"author": "Jon Krakauer",
+			"summary": "Christopher McCandless, son of wealthy parents, graduates from Emory University as a top student and athlete. However, instead of embarking on a prestigious and profitable career, he chooses to give his savings to charity, rid himself of his possessions, and set out on a journey to the Alaskan wilderness.",
+			"genre": "Biography"
+		},
+		{
+			"id":20,
+			"imagePath": "img/leavesgrass.jpg",
+			"title": "Leaves of Grass",
+			"author": "Walt Whitman",
+			"summary": "Leaves of Grass Summary. Leaves of Grass is a collection of poetry written over Walt Whitman's entire lifetime organized thematically into sections. Whitman revised and added to the book throughout his life, the final edition being published only months before his death in 1891",
+			"genre": "Poetry"
+		}
+	]

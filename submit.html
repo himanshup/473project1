@@ -2,92 +2,81 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Submit</title>
-    <link rel="icon" href="favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/submit.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Submit</title>
+  <link rel="icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/submit.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="/">Books</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">Books</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home
                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="dashboard.html">Swipe</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="summary.html">Ratings</a>
-                    </li>
-                </ul>
-                <a href="submit.html" class="btn btn-outline-light active">Submit
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">Swipe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="summary.html">Ratings</a>
+          </li>
+        </ul>
+        <a href="submit.html" class="btn btn-outline-light active">Submit
                     <span class="sr-only">(current)</span>
                 </a>
-            </div>
-        </div>
-    </nav>
-    <!-- container -->
-    <div class="container submit-content shadow p-3 mb-5 bg-white rounded animated fadeInUp">
-        <div class="text-center">
-            <h1 class="display-4">New Book</h1>
-            <p class="lead">Submit a new book for others to rate.</p>
-        </div>
-        <div class="text-center" id="submission-msg">
-            <p class="lead text-success">Thank you for your submission.</p>
-        </div>
-        <form>
-            <div class="form-group">
-                <label for="title">Book Title</label>
-                <input type="text" class="form-control" id="title" name="title" placeholder="Title">
-            </div>
-            <div class="form-group">
-                <label for="genre">Genre</label>
-                <input type="text" class="form-control" id="genre" name="genre" placeholder="Genre">
-                <div class="invalid-feedback">
-                    Please enter a genre.
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="quote">Summary</label>
-                <textarea class="form-control" id="quote" name="quote" placeholder="Short summary here"></textarea>
-            </div>
-            <div class="input-group mb-3">
-                <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="picture" aria-describedby="inputGroupFileAddon04" name="picture">
-                    <label class="custom-file-label" for="picture">Picture Of Book</label>
-                </div>
-            </div>
-            <button id="submit-btn" type="button" class="btn form-btns">Submit</button>
-            <input class="btn form-btns" type="reset" value="Reset">
-        </form>
+      </div>
     </div>
+  </nav>
+  <!-- container -->
+  <div class="container submit-content shadow p-3 mb-5 bg-white rounded animated fadeInUp">
+    <div class="text-center">
+      <h1 class="display-4">New Book</h1>
+      <p class="lead">Submit a new book for others to rate.</p>
+    </div>
+    <div class="text-center" id="submission-msg">
+      <p class="lead text-success">Thank you for your submission.</p>
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="title">Book Title:</label>
+        <input type="text" class="form-control" id="title" name="title" required>
+      </div>
+      <div class="form-group">
+        <label for="author">Author:</label>
+        <input type="text" class="form-control" id="author" name="genre" required>
+        <div class="invalid-feedback">
+          Please enter an autor.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="comment">Reason why it should be included:</label>
+        <textarea class="form-control" id="comment" name="comment"></textarea>
+      </div>
+      <button id="submit-btn" type="button" class="btn form-btns">Submit</button>
+      <input class="btn form-btns" type="reset" value="Reset">
+    </form>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="scripts/submit.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="scripts/database.js" charset="utf-8"></script>
+  <script src="scripts/submit.js" charset="utf-8"></script>
 </body>
 
 </html>

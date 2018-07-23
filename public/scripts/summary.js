@@ -36,7 +36,6 @@ var counter = 0;
 	var remoteDB = new DataBase(SERVER_URL);
 
 	generateBooks();
-	checkClick();
 
 	function generateBooks() {
 		$.getJSON("books.json").done(function (result) {

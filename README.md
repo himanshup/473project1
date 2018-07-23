@@ -3,7 +3,7 @@
 ## Requirements
 Deployd, Node.js, and Browsersync  
 
-##Installing  
+## Installing  
 First clone the repository and start Deployd:   
 
 ```

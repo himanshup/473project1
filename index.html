@@ -46,14 +46,16 @@
     </nav>
     <!-- make fullscreen -->
     <div class="jumbotron jumbotron-fluid text-center">
-        <div class="container" id="jumbotron-text">
+        <div class="container animated fadeInUp" id="jumbotron-text">
             <h1>Welcome to Books.</h1>
             <p class="lead">Like and dislike books in your area!</p>
-            <a class="btn btn-light btn-lg" href="#" role="button">Learn More</a>
+            <a id="scrollbtn" class="ct-btn-scroll ct-js-btn-scroll" href="#section2">
+                <img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png">
+            </a>
         </div>
     </div>
     <!-- container -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="section2">
         <div id="swipe-content">
             <div class="row d-flex justify-content-around">
                 <div class="col- col-lg-6">
@@ -70,29 +72,21 @@
                 </div>
                 <div class="col- col-lg-6 d-flex justify-content-center">
                     <div id="tinder" class="d-flex justify-content-center">
-                        <div class="tinder-card shadow">
-                            <div class="card" style="width: 20rem;">
-                                <img class="card-img-top display-card" src="/img/gatsby.jpg">
-                                <div class="card-img-overlay d-flex flex-column justify-content-end">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="d-flex flex-column justify-content-end ">
-                                            <h5 class="card-title book-title">The Great Gatsby</h5>
-                                            <h6 class="card-subtitle mb-2 genre">Novel, Historical Fiction</h6>
-                                        </div>
-                                    </div>
+                        <div class="tinder-card">
+                            <div class="card shadow" style="width: 18rem;">
+                                <img class="card-img-top display-card" src="img/fahrenheit.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fahrenheit 451</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Utopian and dystopian fiction</h6>
                                 </div>
                             </div>
                         </div>
                         <div class="tinder-card shadow" id="card1">
-                            <div class="card" style="width: 20rem;">
-                                <img class="card-img-top display-card" src="/img/catcher.jpg">
-                                <div class="card-img-overlay d-flex flex-column justify-content-end">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="d-flex flex-column justify-content-end ">
-                                            <h5 class="card-title book-title">The Catcher in the Rye</h5>
-                                            <h6 class="card-subtitle mb-2 genre">Literary realism, Coming-of-Age Fiction</h6>
-                                        </div>
-                                    </div>
+                            <div class="card shadow" style="width: 18rem;">
+                                <img class="card-img-top display-card" src="img/catcher.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">The Catcher in the Rye</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Literary realism, Coming-of-Age Fiction</h6>
                                 </div>
                             </div>
                         </div>
@@ -100,60 +94,61 @@
                 </div>
             </div>
             <hr>
-            <!-- fix card image sizing -->
-            <div id="summary-content">
-                <div class="row d-flex justify-content-center">
-                    <div class="col- col-lg-6">
-                        <div class="card-deck">
-                            <div class="card shadow">
-                                <img class="card-img-top example-card" src="img/fahrenheit.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Fahrenheit 451</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Utopian and dystopian fiction</h6>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">
-                                        90% liked this book
-                                    </small>
-                                </div>
+        </div>
+        <!-- fix card image sizing -->
+        <div id="summary-content">
+            <div class="row d-flex justify-content-center">
+                <div class="col- col-lg-6">
+                    <div class="card-deck">
+                        <div class="card shadow">
+                            <img class="card-img-top example-card" src="img/fahrenheit.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Fahrenheit 451</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Utopian and dystopian fiction</h6>
                             </div>
-                            <div class="card shadow">
-                                <img class="card-img-top example-card" src="img/gatsby.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">The Great Gatsby</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Novel, Historical Fiction</h6>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">
-                                        66% liked this book
-                                    </small>
-                                </div>
+                            <div class="card-footer">
+                                <small class="text-muted">
+                                    90% liked this book
+                                </small>
                             </div>
-                            <div class="card shadow">
-                                <img class="card-img-top example-card" src="img/pi.jpeg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Life of Pi</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Fiction</h6>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">
-                                        80% liked this book
-                                    </small>
-                                </div>
+                        </div>
+                        <div class="card shadow">
+                            <img class="card-img-top example-card" src="img/gatsby.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">The Great Gatsby</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Novel, Historical Fiction</h6>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">
+                                    66% liked this book
+                                </small>
+                            </div>
+                        </div>
+                        <div class="card shadow">
+                            <img class="card-img-top example-card" src="img/catcher.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">The Catcher in the Rye</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Literary realism, Coming-of-Age Fiction</h6>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">
+                                    80% liked this book
+                                </small>
                             </div>
                         </div>
                     </div>
-                    <div class="col- col-lg-6">
-                        <div class="summary-example text-center">
-                            <h1 class="display-4">Ratings
-                                <i class="fab fa-hotjar"></i>
-                            </h1>
-                            <p class="lead">See which books have the highest rating.</p>
-                        </div>
+                </div>
+                <div class="col- col-lg-6">
+                    <div class="summary-example text-center">
+                        <h1 class="display-4">Ratings
+                            <i class="fab fa-hotjar"></i>
+                        </h1>
+                        <p class="lead">See which books have the highest rating.</p>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -162,7 +157,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-    <!-- <script type="text/javascript" src="scripts/main.js"></script> -->
+    <script type="text/javascript" src="scripts/home.js"></script>
 </body>
 
 </html>

@@ -69,7 +69,7 @@ var counter = 0;
 			$('.alert').animateCss('fadeOut', function () {
 				document.querySelector('.alert').style.visibility = "hidden";
 			});
-			document.getElementById('reset-button').addEventListener('click', function () {
+			document.getElementById('resetBtn').addEventListener('click', function () {
 				window.location.reload();
 			});
 		}

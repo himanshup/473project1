@@ -53,9 +53,8 @@ var counter = 0;
 	function generateHTML(book) {
 		var $div = $('<div class="tinder-card" id="book' + book.id + '"></div>');
 		var $text = '<div class="card" style="width: 20rem; height: 37rem;"><img class="card-img-top" src="' + book.imagePath + '">';
-		$text += '<div class="card-body">' + '<h5 class="card-title">' + book.title + "</h5>";
-		// $text += '<p class="card-text">' + book.author + "</p>";
-		$text += '<h6 class="card-subtitle mb-2 text-muted">' + book.genre + '</h6>' + '</div></div>';
+		$text += '<div class="card-body">' + '<h5 class="card-title">' + book.title + '</h5>';
+		$text += '<h6 class="card-subtitle mb-2 text-muted">' + book.genre + '</h6></div></div>';
 		$div.append($text);
 		$("#tinder").append($div);
 	}

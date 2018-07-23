@@ -15,19 +15,14 @@ html {
     /* optional: just make scrollbar invisible */
 }
 
+#tinder {
+    margin-top: 90px;
+}
+
 #no-cards {
     visibility: hidden;
     margin-top: 100px;
 }
-
-/* .card-one {
-    margin-top: 20%;
-}
-
-.card-two {
-    border-top-left-radius: 0 !important;
-    border-top-right-radius: 0 !important;
-} */
 
 .btn-circle {
     font-size: 24px;
@@ -89,14 +84,14 @@ html {
     height: 490px;
 }
 
-#tinder {
-    margin-top: 90px;
-}
-
 .tinder-card {
     position: absolute;
 }
 
 .tinder-buttons {
     padding-top: 410px;
+}
+
+.lead {
+    font-size: 22px;
 }

@@ -42,17 +42,15 @@ var counter = 0;
 		$.getJSON('books.json').done(function (result) {
 			var numberOfBooks = result.length;
 			remoteDB.initialize(numberOfBooks).then(function () {
-				remoteDB.getAll().then(function (databaseBooks) {
-					for (var i = numberOfBooks - 1; i < numberOfBooks; i--) {
-						var book = result[i];
-						generateHTML(book);
-					}
-				});
+				for (var i = numberOfBooks - 1; i < numberOfBooks; i--) {
+					var book = result[i];
+					generateHTML(book);
+				}
 			});
 		});
 	}
 
-	function generateHTML(book, bookDB) {
+	function generateHTML(book) {
 		var $div = $('<div class="tinder-card" id="book' + book.id + '"></div>');
 		var $text = '<div class="card" style="width: 20rem; height: 37rem;"><img class="card-img-top" src="' + book.imagePath + '">';
 		$text += '<div class="card-body">' + '<h5 class="card-title">' + book.title + "</h5>";
@@ -64,7 +62,7 @@ var counter = 0;
 
 	function checkNumOfBooks() {
 		if (document.getElementsByClassName('tinder-card').length === 0) {
-			$('#no-cards').css('visibility','visible').hide().fadeIn('slow');
+			$('#no-cards').css('visibility', 'visible').hide().fadeIn('slow');
 			$('.tinder-buttons').animateCss('fadeOut', function () {
 				document.querySelector('.tinder-buttons').style.visibility = "hidden";
 			});

@@ -1,0 +1,29 @@
+{
+	"type": "Collection",
+	"properties": {
+		"bookId": {
+			"name": "bookId",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "bookId",
+			"order": 0
+		},
+		"liked": {
+			"name": "liked",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "liked",
+			"order": 1
+		},
+		"total": {
+			"name": "total",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "total",
+			"order": 2
+		}
+	}
+}

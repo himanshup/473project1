@@ -1,9 +1,9 @@
 # CPSC 473 Project 1
 
 ## Requirements
-Deployd, Node.js, andBrowsersync
+Deployd, Node.js, and Browsersync  
 
-##Installing
+##Installing  
 First clone the repository and start Deployd:   
 
 ```

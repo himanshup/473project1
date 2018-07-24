@@ -1,4 +1,4 @@
-(function(window) {
+(function (window) {
   "use strict";
   var App = window.App || {};
   var $ = window.jQuery;
@@ -10,9 +10,18 @@
     this.serverUrl = url;
   }
 
-  DataBase.prototype.initialize = function(numberOfBooks) {
+  DataBase.prototype.submitBook = function () {
+    var template = {
+      "Name": $("#title").val(),
+      "Author": $("#author").val(),
+      "comment": $("#comment").val()
+    };
+    return $.post(this.serverUrl, template);
+  }
+
+  DataBase.prototype.initialize = function (numberOfBooks) {
     var url = this.serverUrl;
-    return $.get(url, function(serverResponse) {
+    return $.get(url, function (serverResponse) {
       if (serverResponse.length < numberOfBooks) {
         var difference = numberOfBooks - serverResponse.length;
         var template = {
@@ -28,17 +37,17 @@
     });
   };
 
-  DataBase.prototype.getAll = function() {
+  DataBase.prototype.getAll = function () {
     return $.get(this.serverUrl);
   };
 
-  DataBase.prototype.getBookInfo = function(bookId) {
+  DataBase.prototype.getBookInfo = function (bookId) {
     return $.get(this.serverUrl + "?bookId=" + bookId);
   };
 
-  DataBase.prototype.updateLiked = function(bookId) {
+  DataBase.prototype.updateLiked = function (bookId) {
     var url = this.serverUrl;
-    $.get(url + "?bookId=" + bookId, function(serverResponse) {
+    $.get(url + "?bookId=" + bookId, function (serverResponse) {
       var id = serverResponse[0].id;
       var liked = serverResponse[0].liked;
       var total = serverResponse[0].total;
@@ -53,9 +62,9 @@
     });
   };
 
-  DataBase.prototype.updateDislike = function(bookId) {
+  DataBase.prototype.updateDislike = function (bookId) {
     var url = this.serverUrl;
-    $.get(url + "?bookId=" + bookId, function(serverResponse) {
+    $.get(url + "?bookId=" + bookId, function (serverResponse) {
       var id = serverResponse[0].id;
       var total = serverResponse[0].total;
       total++;

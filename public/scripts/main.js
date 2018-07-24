@@ -39,13 +39,15 @@ var counter = 0;
 	checkClick();
 
 	function generateBooks() {
-		$.getJSON('books.json').done(function (result) {
+		$.getJSON("books.json").done(function (result) {
 			var numberOfBooks = result.length;
 			remoteDB.initialize(numberOfBooks).then(function () {
-				for (var i = numberOfBooks - 1; i < numberOfBooks; i--) {
-					var book = result[i];
-					generateHTML(book);
-				}
+				remoteDB.getAll().then(function (databaseBooks) {
+					for (var i = (numberOfBooks - 1); i < numberOfBooks; i--) {
+						var book = result[i];
+						generateHTML(book);
+					}
+				});
 			});
 		});
 	}

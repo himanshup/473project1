@@ -43,7 +43,7 @@ var counter = 0;
 			var numberOfBooks = result.length;
 			remoteDB.initialize(numberOfBooks).then(function () {
 				remoteDB.getAll().then(function (databaseBooks) {
-					for (var i = (numberOfBooks - 1); i < numberOfBooks; i--) {
+					for (var i = numberOfBooks - 1; i >= 0; i--) {
 						var book = result[i];
 						generateHTML(book);
 					}

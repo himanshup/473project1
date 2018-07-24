@@ -10,23 +10,54 @@ hr {
     width: 97%;
 }
 
-#jumbotron-text {
-    margin-top: 200px;
-}
-
-#tinder {
-    padding-bottom: 530px;
-}
-
 #card1 {
     margin-left: 60px;
     transform: rotate(10deg);
     box-shadow: 1px 1px 1px transparent;
 }
 
-#startBtn {
-    font-size: 20px;
-    margin-top: 5%;
+.card {
+    border: none;
+}
+
+.card-subtitle {
+    font-size: 14px;
+}
+
+.card-title {
+    font-size: 18px;
+}
+
+.container p {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, .7);
+}
+
+.btn-outline-light {
+    font-size: 18px;
+}
+
+.fa-hotjar {
+    color: #ff5e62;
+}
+
+.fa-times-circle {
+    color: #ff5e62;
+    font-size: 60px;
+    padding: 20px;
+}
+
+.fa-heart {
+    color: #2ebf91;
+    font-size: 60px;
+    padding: 20px;
+}
+
+.foo {
+    margin-top: 3%;
+}
+
+#jumbotron-text {
+    margin-top: 200px;
 }
 
 .jumbotron {
@@ -62,12 +93,9 @@ hr {
     font-size: 28px;
 }
 
-.container p {
-    text-shadow: 0 2px 4px rgba(0, 0, 0, .7);
-}
-
-.btn-outline-light {
-    font-size: 18px;
+#startBtn {
+    font-size: 20px;
+    margin-top: 5%;
 }
 
 .swipe-example {
@@ -78,38 +106,10 @@ hr {
     margin-bottom: 5%;
 }
 
-.card {
-    border: none;
-}
-
-.card-title {
-    font-size: 18px;
-}
-
-.card-subtitle {
-    font-size: 14px;
+#tinder {
+    padding-bottom: 530px;
 }
 
 .tinder-card {
     position: absolute;
-}
-
-.fa-hotjar {
-    color: #ff5e62;
-}
-
-.fa-times-circle {
-    color: #ff5e62;
-    font-size: 60px;
-    padding: 20px;
-}
-
-.fa-heart {
-    color: #2ebf91;
-    font-size: 60px;
-    padding: 20px;
-}
-
-.foo {
-    margin-top: 3%;
 }

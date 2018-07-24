@@ -4,13 +4,13 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-#tinder {
-    margin-top: 90px;
+.alert-secondary {
+    margin-top: 14px;
+    border: none;
 }
 
-.refresh-card {
-    visibility: hidden;
-    margin-top: 100px;
+.btn-alert-close:focus {
+    outline: none;
 }
 
 .btn-circle {
@@ -24,72 +24,6 @@ body {
     border-radius: 55%;
     border: none;
     overflow: hidden;
-}
-
-.navbar {
-    font-size: 18px;
-    background: #ff9966;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ff5e62, #ff9966);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-}
-
-.navbar-brand {
-    font-size: 28px;
-}
-
-.alert-secondary {
-    margin-top: 14px;
-    border: none;
-}
-
-.btn-alert-close:focus {
-    outline: none;
-}
-
-.btn-outline-light {
-    font-size: 18px;
-}
-
-.card {
-    border: none;
-}
-
-.card-title {
-    font-size: 18px;
-}
-
-.card-subtitle {
-    font-size: 15px;
-}
-
-.card-img-top {
-    height: 490px;
-}
-
-.tinder-card {
-    position: absolute;
-}
-
-#tinder-row {
-    margin-bottom: 610px;
-}
-
-.refresh-card {
-    position: absolute;
-}
-
-/* .tinder-buttons {
-    padding-top: 410px;
-} */
-
-.lead {
-    font-size: 22px;
 }
 
 .btn-outline-danger {
@@ -112,4 +46,63 @@ body {
     color: #fff;
     background-color: #2ebf91;
     border-color: #2ebf91;
+}
+
+.btn-outline-light {
+    font-size: 18px;
+}
+
+.card {
+    border: none;
+}
+
+.card-img-top {
+    height: 490px;
+}
+
+.card-title {
+    font-size: 18px;
+}
+
+.card-subtitle {
+    font-size: 15px;
+}
+
+.lead {
+    font-size: 22px;
+}
+
+.navbar {
+    font-size: 18px;
+    background: #ff9966;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    font-size: 28px;
+}
+
+.refresh-card {
+    visibility: hidden;
+    margin-top: 100px;
+    position: absolute;
+}
+
+.tinder-card {
+    position: absolute;
+}
+
+#tinder {
+    margin-top: 90px;
+}
+
+#tinder-row {
+    margin-bottom: 610px;
 }

@@ -4,13 +4,18 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-#submission-msg {
-    display: none;
+.btn-outline-light {
+    font-size: 18px;
 }
 
-.submit-content {
-    margin-top: 90px;
-    padding: 30px;
+.form-btns {
+    background: #ff5e62;
+    color: white;
+}
+
+.form-btns:hover {
+    background: #e75356;
+    color: white;
 }
 
 .navbar {
@@ -30,16 +35,11 @@ body {
     font-size: 28px;
 }
 
-.btn-outline-light {
-    font-size: 18px;
+#submission-msg {
+    display: none;
 }
 
-.form-btns {
-    background: #ff5e62;
-    color: white;
-}
-
-.form-btns:hover {
-    background: #e75356;
-    color: white;
+.submit-content {
+    margin-top: 90px;
+    padding: 30px;
 }

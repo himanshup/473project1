@@ -4,21 +4,21 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-#summary-content {
-    margin-top: 70px;
-}
-
 .card {
     margin-top: 25px;
     border: none;
+}
+
+.card-subtitle {
+    font-size: 15px;
 }
 
 .card-title {
     font-size: 18px;
 }
 
-.card-subtitle {
-    font-size: 15px;
+.btn-outline-light {
+    font-size: 18px;
 }
 
 .navbar {
@@ -38,6 +38,6 @@ body {
     font-size: 28px;
 }
 
-.btn-outline-light {
-    font-size: 18px;
+#summary-content {
+    margin-top: 70px;
 }

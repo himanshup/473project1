@@ -4,7 +4,7 @@
 Git, Node.js, and Deployd.
 
 ## Installing  
-Clone the repository (or download the zip file) and start Deployd:   
+Clone the repository (or download the zip file), change into the directory, and then start Deployd:   
 
 ```
 git clone https://github.com/himanshup/project-1.git

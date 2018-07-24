@@ -1,28 +1,28 @@
 {
 	"type": "Collection",
 	"properties": {
-		"bookId": {
-			"name": "bookId",
-			"type": "number",
-			"typeLabel": "number",
+		"Name": {
+			"name": "Name",
+			"type": "string",
+			"typeLabel": "string",
 			"required": false,
-			"id": "bookId",
+			"id": "Name",
 			"order": 0
 		},
-		"liked": {
-			"name": "liked",
-			"type": "number",
-			"typeLabel": "number",
+		"Author": {
+			"name": "Author",
+			"type": "string",
+			"typeLabel": "string",
 			"required": false,
-			"id": "liked",
+			"id": "Author",
 			"order": 1
 		},
-		"total": {
-			"name": "total",
-			"type": "number",
-			"typeLabel": "number",
+		"comment": {
+			"name": "comment",
+			"type": "string",
+			"typeLabel": "string",
 			"required": false,
-			"id": "total",
+			"id": "comment",
 			"order": 2
 		}
 	}

@@ -1,7 +1,7 @@
 # CPSC 473 Project 1
 
 ## Requirements
-Node.js and Deployd.
+Git, Node.js, and Deployd.
 
 ## Installing  
 Clone the repository (or download the zip file) and start Deployd:   
@@ -12,4 +12,4 @@ cd project-1
 dpd -d
 ```  
 
-Then go to localhost:2403 to view the website.
+Then go to [http://localhost:2403](http://localhost:2403) to view the website.

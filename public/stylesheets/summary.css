@@ -1,18 +1,11 @@
 body {
     background: #F3F9FC;
     padding-bottom: 50px;
+    font-family: 'Lato', sans-serif;
 }
 
-html {
-    overflow: scroll;
-    overflow-x: hidden;
-}
-
-::-webkit-scrollbar {
-    width: 0px;
-    /* remove scrollbar space */
-    background: transparent;
-    /* optional: just make scrollbar invisible */
+#summary-content {
+    margin-top: 70px;
 }
 
 .card {
@@ -20,8 +13,15 @@ html {
     border: none;
 }
 
+.card-title {
+    font-size: 18px;
+}
+
+.card-subtitle {
+    font-size: 15px;
+}
+
 .navbar {
-    font-family: 'Lato', sans-serif;
     font-size: 18px;
     background: #ff9966;
     /* fallback for old browsers */
@@ -40,8 +40,4 @@ html {
 
 .btn-outline-light {
     font-size: 18px;
-}
-
-.card-img-top {
-    height: 490px;
 }

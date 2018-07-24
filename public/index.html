@@ -7,12 +7,11 @@
     <title>Books</title>
     <link rel="icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/animate.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 
@@ -44,117 +43,115 @@
             </div>
         </div>
     </nav>
-    <!-- make fullscreen -->
+    <!-- jumbotron -->
     <div class="jumbotron jumbotron-fluid text-center">
         <div class="container animated fadeInUp" id="jumbotron-text">
             <h1>Welcome to Books.</h1>
             <p class="lead">Like and dislike books in your area!</p>
-            <a id="startBtn" class="btn btn-outline-light btn-lg" href="dashboard.html" role="button">Get Started</a>
+            <a id="startBtn" class="btn btn-outline-light btn-lg" href="dashboard.html" role="button">Start Rating</a>
         </div>
     </div>
     <!-- container -->
-    <div class="container-fluid" id="section2">
-        <div id="swipe-content">
-            <div class="row d-flex justify-content-around">
-                <div class="col- col-lg-6">
-                    <div class="swipe-example text-center">
-                        <div class="d-flex justify-content-around">
-                            <button type="button" class="btn btn-outline-danger btn-lg text-uppercase" disabled>nope</button>
-                            <button type="button" class="btn btn-outline-success btn-lg text-uppercase" disabled>like</button>
+    <section id="section2">
+        <div class="container-fluid foo">
+            <div id="swipe-content">
+                <div id="cards" class="row d-flex justify-content-around">
+                    <div class="col- col-lg-6">
+                        <div class="swipe-example text-center">
+                            <h1 class="display-4">Like</h1>
+                            <p class="lead">Click like or dislike on other people's reading material!</p>
+                            <div class="d-flex justify-content-center">
+                                <i class="far fa-times-circle"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
                         </div>
-                        <h1 class="display-4">Like
-                            <i class="fas fa-hand-pointer"></i>
-                        </h1>
-                        <p class="lead">Click like or dislike on other people's reading material!</p>
+                    </div>
+                    <div class="col- col-lg-6 d-flex justify-content-center">
+                        <div id="tinder" class="d-flex justify-content-center">
+                            <div class="tinder-card">
+                                <div class="card shadow" style="width: 18rem;">
+                                    <img class="card-img-top display-card" src="img/fahrenheit.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Fahrenheit 451</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Utopian and dystopian fiction</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tinder-card shadow" id="card1">
+                                <div class="card shadow" style="width: 18rem;">
+                                    <img class="card-img-top display-card" src="img/catcherExample.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Catcher in the Rye</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Literary realism</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col- col-lg-6 d-flex justify-content-center">
-                    <div id="tinder" class="d-flex justify-content-center">
-                        <div class="tinder-card">
-                            <div class="card shadow" style="width: 18rem;">
-                                <img class="card-img-top display-card" src="img/fahrenheit.jpg" alt="Card image cap">
+            </div>
+        </div>
+        <hr>
+        <div class="container-fluid bar">
+            <div id="summary-content">
+                <div class="row d-flex justify-content-center">
+                    <div class="col- col-lg-6 order-2 order-md-2 order-lg-1">
+                        <div class="card-deck">
+                            <div class="card shadow">
+                                <img class="card-img-top example-card" src="img/fahrenheit.jpg" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Fahrenheit 451</h5>
                                     <h6 class="card-subtitle mb-2 text-muted">Utopian and dystopian fiction</h6>
                                 </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        90% liked this book
+                                    </small>
+                                </div>
                             </div>
-                        </div>
-                        <div class="tinder-card shadow" id="card1">
-                            <div class="card shadow" style="width: 18rem;">
-                                <img class="card-img-top display-card" src="img/catcherExample.jpg" alt="Card image cap">
+                            <div class="card shadow">
+                                <img class="card-img-top example-card" src="img/gatsby.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">The Great Gatsby</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Historical Fiction</h6>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        66% liked this book
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="card shadow">
+                                <img class="card-img-top example-card" src="img/catcherExample.jpg" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">The Catcher in the Rye</h5>
                                     <h6 class="card-subtitle mb-2 text-muted">Literary realism</h6>
                                 </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        80% liked this book
+                                    </small>
+                                </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col- col-lg-6 order-1 order-md-1 order-lg-2">
+                        <div class="summary-example text-center">
+                            <i class="fab fa-hotjar" style="font-size: 70px;"></i>
+                            <h1 class="display-4">Ratings</h1>
+                            <p class="lead">See which books have the highest rating.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <hr>
         </div>
-        <!-- fix card image sizing -->
-        <div id="summary-content">
-            <div class="row d-flex justify-content-center">
-                <div class="col- col-lg-6">
-                    <div class="card-deck">
-                        <div class="card shadow">
-                            <img class="card-img-top example-card" src="img/fahrenheit.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Fahrenheit 451</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Utopian and dystopian fiction</h6>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">
-                                    90% liked this book
-                                </small>
-                            </div>
-                        </div>
-                        <div class="card shadow">
-                            <img class="card-img-top example-card" src="img/gatsby.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">The Great Gatsby</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Novel, Historical Fiction</h6>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">
-                                    66% liked this book
-                                </small>
-                            </div>
-                        </div>
-                        <div class="card shadow">
-                            <img class="card-img-top example-card" src="img/catcherExample.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">The Catcher in the Rye</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Literary realism</h6>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">
-                                    80% liked this book
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col- col-lg-6 flex-first flex-md-unordered">
-                    <div class="summary-example text-center">
-                        <h1 class="display-4">Ratings
-                            <i class="fab fa-hotjar"></i>
-                        </h1>
-                        <p class="lead">See which books have the highest rating.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </section>
 
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script type="text/javascript" src="scripts/home.js"></script>
 </body>
 

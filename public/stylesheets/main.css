@@ -1,24 +1,13 @@
 body {
     background: #F3F9FC;
-}
-
-/* for hiding scrollbar */
-
-html {
-    overflow: scroll;
-    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 50px;
 }
 
 hr {
     margin-top: 50px;
-    margin-bottom: 30px;
-}
-
-::-webkit-scrollbar {
-    width: 0px;
-    /* remove scrollbar space */
-    background: transparent;
-    /* optional: just make scrollbar invisible */
+    margin-bottom: 40px;
+    width: 97%;
 }
 
 #jumbotron-text {
@@ -37,6 +26,7 @@ hr {
 
 #startBtn {
     font-size: 20px;
+    margin-top: 5%;
 }
 
 .jumbotron {
@@ -45,7 +35,7 @@ hr {
     background-size: cover;
     background-position: center;
     color: white;
-    min-height: 800px;
+    height: 100vh;
 }
 
 .jumbotron h1 {
@@ -72,11 +62,6 @@ hr {
     font-size: 28px;
 }
 
-.container-fluid {
-    padding-top: 25px;
-    padding-bottom: 50px;
-}
-
 .container p {
     text-shadow: 0 2px 4px rgba(0, 0, 0, .7);
 }
@@ -85,76 +70,46 @@ hr {
     font-size: 18px;
 }
 
-.btn-outline-success {
-    transform: rotate(40deg);
-}
-
-.btn-outline-danger {
-    transform: rotate(-40deg);
-}
-
 .swipe-example {
-    margin-bottom: 10%
+    margin-bottom: 4%;
 }
 
 .summary-example {
-    margin-top: 10%;
+    margin-bottom: 5%;
 }
 
 .card {
     border: none;
 }
 
-.book-title {
-    color: white;
-    font-size: 24px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, .5);
-}
-
-.genre {
-    color: rgb(194, 193, 193);
-    font-size: 16px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, .5);
-}
-
 .card-title {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .card-subtitle {
     font-size: 14px;
 }
 
-.display-card {
-    height: 430px;
-}
-
 .tinder-card {
     position: absolute;
 }
 
-.lead {
-    font-size: 22px;
+.fa-hotjar {
+    color: #ff5e62;
 }
 
-.ct-btn-scroll {
-    position: relative;
-    top: 100px;
-    -webkit-transition: 0.4s ease;
-    transition: 0.4s ease;
+.fa-times-circle {
+    color: #ff5e62;
+    font-size: 60px;
+    padding: 20px;
 }
 
-.ct-btn-scroll:hover {
-    transition: 0.4s ease;
-    opacity: 0.6;
+.fa-heart {
+    color: #2ebf91;
+    font-size: 60px;
+    padding: 20px;
 }
 
-.start-btn {
-    background: #fd5068;
-    color: white;
-}
-
-.start-btn:hover {
-    background: #e2465b;
-    color: white;
+.foo {
+    margin-top: 3%;
 }

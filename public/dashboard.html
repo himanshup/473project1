@@ -7,12 +7,11 @@
     <title>Like</title>
     <link rel="icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/dashboard.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/animate.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/dashboard.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 
@@ -47,21 +46,15 @@
     </nav>
     <!-- container -->
     <div class="container" id="tinder-container">
-        <div class="row">
+        <div id="tinder-row" class="row">
             <div class="col-12">
                 <div id="tinder" class="d-flex justify-content-center animated fadeIn">
-                    <div id="no-cards">
-                        <div class="row">
-                            <div class="col d-flex justify-content-center">
-                                <p class="lead text-center">No cards left, press the button to refresh.</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col d-flex justify-content-center">
-                                <button type="button" id="resetBtn" class="btn btn-outline-info btn-circle btn-lg shadow-sm">
-                                    <i class="fas fa-sync-alt"></i>
-                                </button>
-                            </div>
+                    <div id="no-cards" class="refresh-card" id="tinder-shadow">
+                        <div class="card-body text-center">
+                            <p class="lead text-center">No cards left, press the button to refresh.</p>
+                            <button type="button" id="resetBtn" class="btn btn-outline-info btn-circle btn-lg shadow-sm">
+                                <i class="fas fa-sync-alt"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="tinder-card" id="tinder-shadow">
@@ -69,19 +62,20 @@
                     </div>
                 </div>
                 <input id="book" type="text" name="counter" class="d-none" value="0">
-                <div class="tinder-buttons d-flex justify-content-center animated bounceInUp">
-                    <div class="col-auto">
-                        <button type="button" id="dislikeBtn" class="btn btn-outline-danger btn-circle btn-lg shadow-sm">
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </div>
+            </div>
+        </div>
+        <!-- like and dislike -->
+        <div class="tinder-buttons d-flex justify-content-center animated bounceInUp">
+            <div class="col-auto">
+                <button type="button" id="dislikeBtn" class="btn btn-outline-danger btn-circle btn-lg shadow-sm">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
 
-                    <div class="col-auto">
-                        <button type="button" id="likeBtn" class="btn btn-outline-success btn-circle btn-lg shadow-sm">
-                            <i class="fas fa-heart"></i>
-                        </button>
-                    </div>
-                </div>
+            <div class="col-auto">
+                <button type="button" id="likeBtn" class="btn btn-outline-success btn-circle btn-lg shadow-sm">
+                    <i class="fas fa-heart"></i>
+                </button>
             </div>
         </div>
         <!-- help info at the bottom -->
@@ -102,7 +96,6 @@
                             </div>
                         </div>
                     </div>
-
                     <button type="button" class="close btn-alert-close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -111,12 +104,10 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
     <script type="text/javascript" src="scripts/database.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
 </body>
